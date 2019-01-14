@@ -1,13 +1,14 @@
 <?php
     session_start();
-    include "allHororscope.php";
+    include 'allHoroscope.php';
 
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-        $lastFour = substr($_POST['birthNR'], 2, 4);
+        $birthDate = substr($_POST["birthNR"], 0, 6);
+        $lastFour = $birthDate[2] . $birthDate[3] . $birthDate[4] . $birthDate[5];
 
-        if(!isset($_SESSION['myhoroscope'])) {
-            $_SESSION['myhoroscope'] = mySign($signs, $lastFour);
+        if(!isset($_SESSION['theScopeofhoro'])) {
+            $_SESSION['theScopeofhoro'] = mySign($signs, $lastFour, $birthDate);
             echo true;
 
         }else{

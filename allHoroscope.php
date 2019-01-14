@@ -1,6 +1,6 @@
 <?php
 
-    function mySign($signs, $lastFour){
+    function mySign($signs, $lastFour, $birthDate){
         foreach($signs as $sign){
             if($lastFour >= $sign['from'] && $lastFour <= $sign['to']){
                 $label = $sign['label'];

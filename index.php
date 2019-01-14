@@ -12,7 +12,7 @@
     <?php
 
     ?>
-    <h3>Skriv in din födelsenr, 6 siffror!</h3>
+    <h3>Skriv in din födelsedatum, 6 siffror!</h3>
     <form action="addHoroscope.php" method="post">  
         <input type="text" id="birthNR" placeholder="YYMMDD" value="">
         <br>

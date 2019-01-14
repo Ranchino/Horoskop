@@ -14,7 +14,7 @@
     ?>
     <h3>Skriv in din födelsenr, 6 siffror!</h3>
     <form action="addHoroscope.php" method="post">  
-        <input type="text" name="birthNR" placeholder="YYMMDD" value="">
+        <input type="text" id="birthNR" placeholder="YYMMDD" value="">
         <br>
         <span>
         <button type="submit" name="saveHoro" value="" onclick="saveIT()">Spara mitt horoskop</button>

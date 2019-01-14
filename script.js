@@ -29,4 +29,31 @@ $(document).ready(function(){
         });
     };
 
+    updateIT = function(){
+        $.ajax({
+            url: "updateHoroscope.php",
+            method: "PUT",
+            data:{
+                birthNR: $("#birthNR").val()
+            },
+            success: function(test){
+                $("#myHoro").html(test);  
+                viewHoroscope();
+            }
+        });
+      
+    };
+
+    deleteIT = function(){
+        $.ajax({
+            url: "deleteHoroscope.php",
+            method: "DELETE",
+
+            success: function(test){
+                $("#myHoro").html(test);
+                viewHoroscope();
+            }
+        });
+    };
+
 });

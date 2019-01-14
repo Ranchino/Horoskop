@@ -10,6 +10,9 @@ $(document).ready(function(){
             },
             success: function(test) {
                 $("#myHoro").html(test);
+
+                $('#myHoro').hide();
+                $('#myHoro').fadeIn(3000);
             }
         });
         

@@ -1,4 +1,15 @@
 <?php
+
+    function mySign($signs, $lastFour){
+        foreach($signs as $sign){
+            if($lastFour >= $sign['from'] && $lastFour <= $sign['to']){
+                $label = $sign['label'];
+                $theScopeofhoro = "<h3>$label</h3>";
+                return $theScopeofhoro;
+            }
+        }
+    }
+
     $signs [] = [
         "label" => "Stenbocken",
         "from" => "1222",
@@ -59,4 +70,6 @@
         "from" => "1122",
         "to" => "1221",
     ];
+
+
 ?>

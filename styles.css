@@ -1,0 +1,93 @@
+body{
+    margin: 0;
+}
+
+.imageContainer{
+    position: absolute;
+}
+
+img {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    margin-top: 0;
+}
+
+.formContainer{
+    text-align: center;
+    position: absolute;
+    margin-top: 3em;
+    top: 8px;
+    right: 8em;
+    font-size: 1.5em;
+    font-family: 'Archivo Narrow', sans-serif;
+    border-radius: 15px;
+    width: 22em;
+    height: 8em;
+
+}
+
+.formContainer h3{
+    text-decoration: underline;
+}
+
+#form input {
+	outline: 1;
+	background: #FFFFFF;
+    width: 10em;
+    height: 3em;
+    border: 1px solid black;
+    border-radius: 5px;
+	margin: 0 0 15px;
+	padding: 15px;
+	box-sizing: border-box;
+	font-size: 0.7em;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.fa-save{
+    background: rgb(6, 221, 60);
+	font-size: 0.6em;
+    padding: 5px;
+	border-radius: 0.7em;
+	outline: 0;
+    width: 11em;
+    font-weight: bolder;
+}
+
+.fa-pencil-alt{
+    background: rgb(57, 100, 243);
+	font-size: 0.6em;
+    padding: 5px;
+	border-radius: 0.7em;
+	outline: 0;
+    width: 12em;
+}
+
+.fa-trash-alt{
+    background: rgb(245, 76, 46);
+	font-size: 0.6em;
+    padding: 5px;
+	border-radius: 0.7em;
+	outline: 0;
+    width: 11em;
+}
+
+.resultContainer{
+    text-align: center;
+    position: absolute;
+    margin-top: 11em;
+    top: 8px;
+    right: 13em;
+    font-size: 1.5em;
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+#myHoro{
+    font-size: 1.5em;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}

@@ -1,6 +1,7 @@
 <?php
 
     function mySign($signs, $lastFour, $birthDate){
+
         foreach($signs as $sign){
             if($lastFour >= $sign['from'] && $lastFour <= $sign['to']){
                 $label = $sign['label'];
@@ -8,8 +9,15 @@
                 return $theScopeofhoro;
             }
         }
+        $label = "Stenbocken";
+        $theScopeofhoro = "<h3>$label</h3>";
+        return $theScopeofhoro;
     }
-
+    $signs [] = [
+        "label" => "Ditt stjärntecken finns ej!",
+        "from" => "0000",
+        "to" => "0100",
+    ];
     $signs [] = [
         "label" => "Stenbocken",
         "from" => "1222",

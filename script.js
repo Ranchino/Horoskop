@@ -8,8 +8,8 @@ $(document).ready(function(){
             data: {
                 birthNR: $("#birthNR").val()
             },
-            success: function(test) {
-                $("#myHoro").html(test);
+            success: function(run) {
+                $("#myHoro").html(run);
 
                 $('#myHoro').hide();
                 $('#myHoro').fadeIn(3000);
@@ -25,8 +25,8 @@ $(document).ready(function(){
             data: {
                 birthNR: $("#birthNR").val()
             },
-            success: function(test){
-               $("#myHoro").html(test);
+            success: function(run){
+               $("#myHoro").html(run);
                showHoroscope();
             }  
         });
@@ -39,8 +39,8 @@ $(document).ready(function(){
             data:{
                 birthNR: $("#birthNR").val()
             },
-            success: function(test){
-                $("#myHoro").html(test);  
+            success: function(run){
+                $("#myHoro").html(run);  
                 viewHoroscope();
             }
         });
@@ -52,8 +52,8 @@ $(document).ready(function(){
             url: "deleteHoroscope.php",
             method: "DELETE",
 
-            success: function(test){
-                $("#myHoro").html(test);
+            success: function(run){
+                $("#myHoro").html(run);
                 viewHoroscope();
             }
         });

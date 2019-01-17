@@ -16,4 +16,5 @@
 
 
 *(Länken visar enbart projektet utan databas, för en komplett version så laddar ner/klona repot och kör den i en localhost)*
+
 **Testa [här](https://ranchino.github.io/Horoskop/)!**

@@ -9,18 +9,23 @@
                 return $theScopeofhoro;
             }
         }
-        $label = "Stenbocken";
-        $theScopeofhoro = "<h3>$label</h3>";
-        return $theScopeofhoro;
+        // $label = "Stenbocken";
+        // $theScopeofhoro = "<h3>$label</h3>";
+        // return $theScopeofhoro;
     }
-    $signs [] = [
-        "label" => "Ditt stjärntecken finns ej!",
-        "from" => "0000",
-        "to" => "0100",
-    ];
+    // $signs [] = [
+    //     "label" => "Ditt stjärntecken finns ej!",
+    //     "from" => "0000",
+    //     "to" => "0100",
+    // ];
     $signs [] = [
         "label" => "Stenbocken",
         "from" => "1222",
+        "to" => "1231",
+    ];
+    $signs [] = [
+        "label" => "Stenbocken",
+        "from" => "0101",
         "to" => "0119",
     ];
     $signs [] = [

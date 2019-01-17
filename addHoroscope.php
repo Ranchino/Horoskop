@@ -9,10 +9,10 @@ session_start();
 
         if(!isset($_SESSION['theScopeofhoro'])) {
             $_SESSION['theScopeofhoro'] = mySign($signs, $lastFour, $birthDate);
-            echo true;
+            echo "true";
 
         }else{
-            echo false;
+            echo "false";
         }
     }
 ?>

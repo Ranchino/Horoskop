@@ -1,6 +1,6 @@
 <?php
-parse_str(file_get_contents('php://input'), $_PUT);
 session_start();
+parse_str(file_get_contents('php://input'), $_PUT);
 
 include "allHoroscope.php";
 
@@ -11,9 +11,9 @@ if($_SERVER['REQUEST_METHOD'] == 'PUT'){
     if(isset($_SESSION['theScopeofhoro'])){
         session_unset();
         $_SESSION['theScopeofhoro'] = mySign($signs, $lastFour, $birthDate);
-        echo true;
+        echo "true";
     }else{
-        echo false;
+        echo "false";
     }
 }
 ?>

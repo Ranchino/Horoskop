@@ -1,6 +1,6 @@
 <?php
-session_start();
 parse_str(file_get_contents('php://input'), $_PUT);
+session_start();
 
 include "allHoroscope.php";
 
